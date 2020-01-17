@@ -45,7 +45,7 @@ input {
   cursor: pointer;
 
   color: white;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -103,7 +103,7 @@ input {
 .card-label {
   margin-top: 3vw;
   margin-left: 3vw;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -128,7 +128,7 @@ input {
   border-radius: 31px;
   border: none;
   color: white;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 1.2vw;
@@ -159,7 +159,7 @@ input {
   .card-label {
     margin-top: 6vw;
     margin-left: 6vw;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -184,7 +184,7 @@ input {
     border-radius: 31px;
     color: white;
 
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 2vw;
