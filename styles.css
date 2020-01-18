@@ -626,6 +626,13 @@ input {
 }
 /* ========================== */
 
+
+.settings-label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+}
 .button-container {
   height: 50vw;
   display:inline-block;
