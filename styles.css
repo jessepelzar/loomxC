@@ -203,6 +203,7 @@ input {
     display: grid;
     grid-template-columns: 80vw;
   }
+
   .color-grid {
     width: 80vw;
   }
@@ -296,11 +297,14 @@ input {
   }
 
     .settings-label,.label{
-      font-size: 4vw;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 4vw !important;
     }
 
     .settings-light-buttons {
-      margin-top: 2vh !important;
+      margin-top: 4vh !important;
     }
   /* The switch - the box around the slider */
     .switch {
@@ -400,6 +404,16 @@ input {
 
     .slider-val {
       float:left;
+    }
+
+    .light-controls {
+      margin-left: 6vw;
+      margin-top: 6vh !important;
+      z-index: 2000;
+    }
+
+    .light-controls div {
+      margin-bottom: 3vh;
     }
 }
 
@@ -623,8 +637,18 @@ input {
       .slider-val {
         float:left;
       }
+
+      .light-controls {
+        margin-left: 6vw;
+        margin-top: 10vh;
+        z-index: 2000;
+      }
+
+      .light-controls div {
+        margin-bottom: 3vh;
+      }
 }
-/* ========================== */
+/* ========================================================= */
 
 
 .settings-label {
@@ -704,6 +728,11 @@ input {
   margin-right: 5vw;
 }
 
+.button-container-settings {
+  /* margin-top: 10vh; */
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
 
   .power-button {
     width: 10vw;
@@ -873,15 +902,7 @@ input {
 
 
 
- .light-controls {
-   margin-left: 6vw;
-   margin-top: 10vh;
-   z-index: 2000;
- }
 
- .light-controls div {
-   margin-bottom: 3vh;
- }
 /*
 .card-button:first-child {
   border: 1px solid #FF3055;
