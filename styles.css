@@ -169,7 +169,7 @@ input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 3vw !important;
     /* line-height: 22px; */
   }
   .card-button-container {
