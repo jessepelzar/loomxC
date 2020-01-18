@@ -137,6 +137,14 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
+  .label-container {
+    margin-top: 4vh !important;
+  }
+
+  .scroll-menu-container {
+    margin-top: 12vh !important;
+  }
+
   .grid {
     width: 80vw;
     display: grid;
@@ -189,9 +197,432 @@ input {
     font-weight: 500;
     font-size: 2vw;
     line-height: 17px;
-
-
   }
+
+  .light-settings-container {
+    display: grid;
+    grid-template-columns: 80vw;
+  }
+  .color-grid {
+    width: 80vw;
+  }
+
+  .jQWCP-wWheel {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    float: left;
+    width: 500px !important;
+    height: 500px !important;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    /* margin-top: -41px; */
+    margin-right: 80px;
+    transition: border .15s;
+    cursor: crosshair;
+  }
+
+  .jQWCP-slider {
+    cursor: crosshair;
+
+    /* margin-top: -40px; */
+  }
+
+  .jQWCP-wSatCursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: -5px;
+    /* margin-top: -42px; */
+    margin-bottom: 50px;
+    cursor: crosshair;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .jQWCP-wValCursor {
+    margin-left: 5px;
+    /* margin-top: -42px; */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    right: 0;
+    cursor: crosshair;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .color-preview-circle {
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: -1px;
+    margin-top: -245px;
+    z-index: 1000;
+    width: 500px;
+    height: 500px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 11px solid #fff;
+    outline: none;
+  }
+
+  .jQWCP-slider-wrapper {
+    height: 500px !important;
+    margin-right: 50px;
+  }
+
+  .jQWCP-wWheelCursor {
+    z-index: 3005 !important;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: crosshair;
+    border: solid 2px #fff;
+    border-radius: 100%;
+  }
+
+    .settings-label,.label{
+      font-size: 4vw;
+    }
+
+    .settings-light-buttons {
+      margin-top: 2vh !important;
+    }
+  /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      /* width: 60px;
+      height: 34px; */
+      width: 120px;
+      height: 68px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 52px;
+      width: 52px;
+      left: 8px;
+      bottom: 8px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(52px);
+      -ms-transform: translateX(52px);
+      transform: translateX(52px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 68px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    /* brightness */
+    .brightness-slider {
+      -webkit-appearance: none;
+      width: 70vw;
+      height: 3px;
+      border-radius: 5px;
+      background: white;
+      outline: none;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+
+    .brightness-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #262626;
+      border: 3px solid white;
+      cursor: pointer;
+    }
+
+    .brightness-slider::-moz-range-thumb {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #4CAF50;
+      cursor: pointer;
+    }
+
+    .slider-val {
+      float:left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1001px) {
+  .color-grid {
+    /* height: 100px; */
+    /* margin-left: 20px; */
+    width: 40vw;
+    margin-top: 20vh;
+    /* top: 400px; */
+    /* text-align: center; */
+    /* position: inherit; */
+  }
+
+  .light-settings-container {
+    width: 80vw;
+    height: 40vh;
+    display: inline-flex;
+    /* justify-content: space-between; */
+  }
+
+  .jQWCP-wWheel {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    float: left;
+    width: 220px !important;
+    height: 220px !important;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    /* margin-top: -41px; */
+    margin-right: 50px;
+    transition: border .15s;
+    cursor: crosshair;
+  }
+
+  .jQWCP-slider {
+    cursor: crosshair;
+    /* margin-top: -40px; */
+  }
+
+  .jQWCP-wSatCursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: 5px;
+    /* margin-top: -42px; */
+    margin-bottom: 50px;
+    cursor: crosshair;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .jQWCP-wValCursor {
+    margin-left: 15px;
+    /* margin-top: -42px; */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    cursor: crosshair;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .color-preview-circle {
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* float: left; */
+    /* left: 20vw; */
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: -1px;
+    margin-top: -245px;
+    /* top: 200px; */
+    z-index: 1000;
+    width: 220px;
+    height: 220px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 11px solid #fff;
+    outline: none;
+    /* vertical-align: middle; */
+    /* padding: 2px; */
+    /* background-clip: content-box; */
+  }
+  .jQWCP-slider-wrapper {
+    height: 220px !important;
+  }
+
+  .jQWCP-wWheelCursor {
+    z-index: 3005 !important;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin: -6px -6px; */
+    cursor: crosshair;
+    border: solid 2px #fff;
+    /* box-shadow: 1px 1px 2px #000; */
+    border-radius: 100%;
+  }
+
+  /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    /* brightness */
+      .brightness-slider {
+        -webkit-appearance: none;
+        width: 30vw;
+        height: 3px;
+        border-radius: 5px;
+        background: white;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      .brightness-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: #262626;
+        border: 3px solid white;
+        cursor: pointer;
+      }
+
+      .brightness-slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+
+      .slider-val {
+        float:left;
+      }
 }
 /* ========================== */
 
@@ -329,19 +760,7 @@ input {
     border-radius: 50%;
   }
 
-  .jQWCP-wWheelCursor {
-    z-index: 3005 !important;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* margin: -6px -6px; */
-    cursor: crosshair;
-    border: solid 2px #fff;
-    /* box-shadow: 1px 1px 2px #000; */
-    border-radius: 100%;
-  }
+
 
   .jQWCP-slider-wrapper,
   .jQWCP-wPreview {
@@ -424,7 +843,6 @@ input {
       top: auto !important;
       width: 100%;
       height: 75%;
-      max-height: 240px;
       box-sizing: border-box;
       border-radius: 0;
   }
@@ -444,100 +862,9 @@ input {
 
 
 
-  .jQWCP-wWheel {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
-    float: left;
-    width: 220px !important;
-    height: 220px !important;
-    -webkit-border-radius: 90px;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    border: none;
-    /* margin-top: -41px; */
-    margin-right: 50px;
-    transition: border .15s;
-    cursor: crosshair;
-  }
 
-  .jQWCP-slider {
-    cursor: crosshair;
-    /* margin-top: -40px; */
-  }
 
-  .jQWCP-wSatCursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin-left: 5px;
-    /* margin-top: -42px; */
-    margin-bottom: 50px;
-    cursor: crosshair;
-    border: solid 2px #fff;
-    border-radius: 100%;
-    background-color: white;
-  }
 
-  .jQWCP-wValCursor {
-    margin-left: 15px;
-    /* margin-top: -42px; */
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 0;
-    top: 0;
-    right: 0;
-    cursor: crosshair;
-    border: solid 2px #fff;
-    border-radius: 100%;
-    background-color: white;
-  }
-
-  .color-preview-circle {
-      /* display: inline-block; */
-      /* position: absolute; */
-      /* float: left; */
-      /* left: 20vw; */
-      left: 0;
-      top: 0;
-      right: 0;
-      margin-left: -1px;
-      margin-top: -245px;
-      /* top: 200px; */
-      z-index: 1000;
-      width: 220px;
-      height: 220px;
-      -webkit-border-radius: 90px;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      border: 11px solid #fff;
-      outline: none;
-      /* vertical-align: middle; */
-      /* padding: 2px; */
-      /* background-clip: content-box; */
-  }
-
-  .color-grid {
-    /* height: 100px; */
-    /* margin-left: 20px; */
-    width: 40vw;
-    margin-top: 20vh;
-    /* top: 400px; */
-    /* text-align: center; */
-    /* position: inherit; */
-  }
-
-  .light-settings-container {
-    width: 80vw;
-    height: 40vh;
-    display: inline-flex;
-    /* justify-content: space-between; */
-  }
 
  .light-controls {
    margin-left: 6vw;
@@ -570,108 +897,10 @@ input {
 } */
 
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
 
 
-/* brightness */
-.brightness-slider {
 
-    /* margin-left: 5vw;
-    margin-right: 5vw; */
-    -webkit-appearance: none;
-    width: 30vw;
-    height: 3px;
-    border-radius: 5px;
-    background: white;
-    outline: none;
 
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-
-  .brightness-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #262626;
-    border: 3px solid white;
-    cursor: pointer;
-  }
-
-  .brightness-slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #4CAF50;
-    cursor: pointer;
-  }
-
-  .slider-val {
-    float:left;
-  }
 
 
 
