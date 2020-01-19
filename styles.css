@@ -109,7 +109,9 @@ input {
   height: inherit;
   overflow-y: scroll;
   width: 100vw;
-  z-index: 2;
+  /* margin-right: 10vw;
+  margin-left: 10vw; */
+  z-index: 5000;
   /* margin-right: 4vw; */
   /* scroll-margin: 0px;
   scroll-snap-align: start;
@@ -124,6 +126,7 @@ input {
   margin-right: 10vw;
   margin-left: 10vw;
   margin-bottom: 10vh;
+  /* overflow-y: scroll; */
   /* margin-bottom: 100px; */
 }
 

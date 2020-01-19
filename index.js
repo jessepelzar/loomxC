@@ -213,19 +213,37 @@ $(document).ready( function() {
         // Current percentual position
       if (scrollWidth <= 1000) {
         var scrollPercent = (currX / ((scrollWidth - postWidth)))
-        if (scrollPercent >= 0 && scrollPercent < scrollWidth / 3) {
+        // if (scrollPercent >= 0 && scrollPercent < scrollWidth / 3) {
+        //   console.log("1111111");
+        //   music.style.color = "#ffffff";
+        //   animation.style.color = "#777777";
+        //   settings.style.color = "#777777";
+        // }
+        // else if (scrollPercent > scrollWidth / 3 && scrollPercent < (scrollWidth * 2) / 3) {
+        //   console.log("2222222");
+        //   music.style.color = "#777777";
+        //   animation.style.color = "#ffffff";
+        //   settings.style.color = "#777777";
+        // }
+        // else if (scrollPercent > (scrollWidth * 2) / 3 && scrollPercent <= scrollWidth) {
+        //   console.log("3333333");
+        //   music.style.color = "#777777";
+        //   animation.style.color = "#777777";
+        //   settings.style.color = "#ffffff";
+        // }
+        if (currX >= 0 && currX < scrollWidth) {
           console.log("1111111");
           music.style.color = "#ffffff";
           animation.style.color = "#777777";
           settings.style.color = "#777777";
         }
-        else if (scrollPercent > scrollWidth / 3 && scrollPercent < (scrollWidth * 2) / 3) {
+        else if (currX >= scrollWidth && currX < scrollWidth * 2) {
           console.log("2222222");
           music.style.color = "#777777";
           animation.style.color = "#ffffff";
           settings.style.color = "#777777";
         }
-        else if (scrollPercent > (scrollWidth * 2) / 3 && scrollPercent <= scrollWidth) {
+        else if (currX >= scrollWidth * 2 && currX < scrollWidth * 3) {
           console.log("3333333");
           music.style.color = "#777777";
           animation.style.color = "#777777";
