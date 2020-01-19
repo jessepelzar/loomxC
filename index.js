@@ -23,6 +23,54 @@ function scrollThumb(direction) {
   }
 }
 
+last = "";
+function navButton(pos) {
+  var child = document.getElementsByClassName('button-container')[0].offsetWidth;
+  if (pos=='Go_L' && last == "Go_M") {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "-=" + child + "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  else if (pos=='Go_L' && last == "Go_R") {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "-=" + child*2 + "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  else if (pos=='Go_M' && last == "Go_R") {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "-=" + child + "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  else if (pos=='Go_M' && last == "Go_L") {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "+=" + child + "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  else if (pos=='Go_R' && last == "Go_L") {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "+=" + child*2+ "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  else if (pos=='Go_R' && last == "Go_M") {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "+=" + child+ "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  last = pos;
+}
+
 $(document).ready( function() {
 
 
