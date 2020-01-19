@@ -96,7 +96,7 @@ input {
   width: 100vw;
   height: 80vh;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   display: inline-flex;
   scroll-behavior: smooth;
   position: fixed;
