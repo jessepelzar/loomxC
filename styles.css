@@ -96,10 +96,22 @@ input {
   width: 100vw;
   height: 80vh;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
-  display: inline-flex;
+  overflow-y: hidden;
+  /* display: inline-flex; */
   scroll-behavior: smooth;
   position: fixed;
+}
+
+.button-container {
+  height: 50vw;
+  display: inline-block;
+  height: inherit;
+  overflow-y: scroll;
+  width: 100vw;
+  /* margin-right: 4vw; */
+  /* scroll-margin: 0px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal; */
 }
 
 .grid {
@@ -689,14 +701,7 @@ input {
   font-size: 2vw;
 }
 
-.button-container {
-  height: 50vw;
-  display: inline-block;
-  /* margin-right: 4vw; */
-  /* scroll-margin: 0px;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal; */
-}
+
 
 /* .x-mandatory {
   scroll-snap-type: x mandatory;
