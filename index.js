@@ -23,7 +23,7 @@ function scrollThumb(direction) {
   }
 }
 
-last = "";
+last = "Go_L";
 function navButton(pos) {
   var child = document.getElementsByClassName('button-container')[0].offsetWidth;
   if (pos=='Go_L' && last == "Go_M") {
