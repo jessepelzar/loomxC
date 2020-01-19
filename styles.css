@@ -13,9 +13,9 @@ input {
 
 .container {
   /* margin: 10px; */
+  height: 100vh;
   position: absolute;
   position: fixed;
-
 }
 
 @supports(scroll-snap-stop: always) {
@@ -60,6 +60,30 @@ input {
   font-size: 2vw;
 }
 
+.leftScroll {
+  display: block;
+  width:6vw;
+  height:80vh;
+  position: absolute;
+  margin-left:0vw;
+  margin-top:20vh;
+  background:none;
+  -webkit-appearance: none;
+  z-index: 4000;
+}
+
+.rightScroll {
+  display: block;
+  width:6vw;
+  height:80vh;
+  position: absolute;
+  margin-left:94vw;
+  margin-top:20vh;
+  background:none;
+  -webkit-appearance: none;
+  z-index: 4000;
+}
+
 .middle-container {
   display: flex;
 }
@@ -68,8 +92,8 @@ input {
 .scroll-menu-container {
   white-space: nowrap;
   margin-top: 20vh;
-  margin-left: 10vw;
-  width: 80vw;
+  /* margin-left: 10vw; */
+  width: 100vw;
   height: 80vh;
   overflow-x: hidden;
   /* overflow-y: scroll; */
@@ -83,11 +107,17 @@ input {
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: 39vw 39vw;
-  margin-right: 100px;
+  margin-right: 10vw;
+  margin-left: 10vw;
   margin-bottom: 10vh;
   /* margin-bottom: 100px; */
 }
 
+.light-settings-container {
+  width: 80vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
 /* Card */
 .card-container {
   /* width: 446px;
