@@ -350,7 +350,7 @@ input {
   }
 
   .settings-light-buttons {
-    margin-top: 4vh !important;
+    margin-top: 3vh !important;
   }
 
   /* The switch - the box around the slider */
@@ -455,12 +455,12 @@ input {
 
   .light-controls {
     margin-left: 6vw;
-    margin-top: 6vh !important;
+    margin-top: 5vh !important;
     z-index: 2000;
   }
 
   .light-controls div {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   }
 }
 
