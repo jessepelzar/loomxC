@@ -21,6 +21,30 @@ light01.actionSel = "balls";
 console.log(light01);
 console.log(light01.actionSel);
 
+// selected class aka button 01 -- find the parents index
+$('.01').click(function() {
+  var parentIndex = $(this).parent().parent().index();
+  light01.actionSel = parentIndex
+  console.log(light01.actionSel);
+});
+
+$('.02').click(function() {
+  var parentIndex = $(this).parent().parent().index();
+  light02.actionSel = parentIndex
+  console.log(light02.actionSel);
+});
+
+$('.03').click(function() {
+  var parentIndex = $(this).parent().parent().index();
+  light03.actionSel = parentIndex
+  console.log(light03.actionSel);
+});
+
+$('.04').click(function() {
+  var parentIndex = $(this).parent().parent().index();
+  light04.actionSel = parentIndex
+  console.log(light04.actionSel);
+});
 
 $('.action-button').click(function() {
   if (light01.settingSel == "true" && $(this).prop("checked") == true ) {
