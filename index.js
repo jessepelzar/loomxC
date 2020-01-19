@@ -3,7 +3,28 @@ var lastIndex01 = 10000;
 var lastIndex02 = 10000;
 var lastIndex03 = 10000;
 var lastIndex04 = 10000;
+
+function scrollThumb(direction) {
+  console.log("d");
+  var child = document.getElementsByClassName('button-container')[0].offsetWidth;
+  if (direction=='Go_L') {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "-=" + child + "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+  else if (direction=='Go_R') {
+      $('.scroll-menu-container').animate({
+          scrollLeft: "+=" + child + "px"
+      }, function(){
+          // createCookie('scrollPos', $('#slide-wrap').scrollLeft());
+      });
+  }
+}
+
 $(document).ready( function() {
+
 
    $(".01").click(function(){
       var index01 = $(".01").index(this);
