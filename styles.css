@@ -14,6 +14,8 @@ input {
 .container {
   /* margin: 10px; */
   position: absolute;
+  position: fixed;
+
 }
 
 @supports(scroll-snap-stop: always) {
