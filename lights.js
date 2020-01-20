@@ -12,38 +12,52 @@ class Light {
   }
 }
 
+class LightGroup {
+  constructor(light1, light2, light3, light4) {
+    this.Light1 = light1;
+    this.Light2 = light2;
+    this.Light3 = light3;
+    this.Light4 = light4;
+  }
+}
+
 
 window.light01 = new Light();
 window.light02 = new Light();
 window.light03 = new Light();
 window.light04 = new Light();
-light01.actionSel = "balls";
-console.log(light01);
-console.log(light01.actionSel);
 
+lightGroup = new LightGroup(light01, light02, light03, light04);
+
+// store in redis and retreive as stringObj again
+// var parsedObj = JSON.parse(stringObj);
+// var that = document.getElementById('that');
 // selected class aka button 01 -- find the parents index
 $('.01').click(function() {
   var parentIndex = $(this).parent().parent().index();
   light01.actionSel = parentIndex
-  console.log(light01.actionSel);
+  // console.log(light01);
+  var stringObj = JSON.stringify(lightGroup);
+  console.log(stringObj);
+  // that.innerHTML = stringObj;
 });
 
 $('.02').click(function() {
   var parentIndex = $(this).parent().parent().index();
   light02.actionSel = parentIndex
-  console.log(light02.actionSel);
+  console.log(light02);
 });
 
 $('.03').click(function() {
   var parentIndex = $(this).parent().parent().index();
   light03.actionSel = parentIndex
-  console.log(light03.actionSel);
+  console.log(light03);
 });
 
 $('.04').click(function() {
   var parentIndex = $(this).parent().parent().index();
   light04.actionSel = parentIndex
-  console.log(light04.actionSel);
+  console.log(light04);
 });
 
 $('.action-button').click(function() {
