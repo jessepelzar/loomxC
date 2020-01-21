@@ -267,31 +267,50 @@ input {
     background-size: contain;
     position: relative;
     float: left;
-    width: 500px !important;
-    height: 500px !important;
+    width: 40vw !important;
+    height: 40vw !important;
     -webkit-border-radius: 90px;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: none;
-    /* margin-top: -41px; */
-    margin-right: 80px;
+    margin-top: 2px;
+    margin-right: 10vw;
+    margin-left: -2px;
     transition: border .15s;
     cursor: crosshair;
   }
 
-  .jQWCP-slider {
-    cursor: crosshair;
-    /* margin-top: -40px; */
-  }
-
-  .jQWCP-wSatCursor {
-    position: absolute;
-    width: 40px;
-    height: 40px;
+  .color-preview-circle {
     left: 0;
     top: 0;
     right: 0;
-    margin-left: -5px;
+    margin-left: -1px;
+    margin-top: -240px;
+    z-index: 1000;
+    width: 38vw;
+    height: 38vw;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    outline: none;
+  }
+
+  .jQWCP-slider-wrapper {
+    height: 40vw !important;
+    margin-right: 5vw !important;
+  }
+
+
+
+  .jQWCP-wSatCursor {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: 1.5vw;
     /* margin-top: -42px; */
     margin-bottom: 50px;
     cursor: crosshair;
@@ -301,11 +320,11 @@ input {
   }
 
   .jQWCP-wValCursor {
-    margin-left: 5px;
+    margin-left: 4.5vw;
     /* margin-top: -42px; */
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 5vw;
+    height: 5vw;
     left: 0;
     top: 0;
     right: 0;
@@ -315,31 +334,15 @@ input {
     background-color: white;
   }
 
-  .color-preview-circle {
-    left: 0;
-    top: 0;
-    right: 0;
-    margin-left: -1px;
-    margin-top: -245px;
-    z-index: 1000;
-    width: 500px;
-    height: 500px;
-    -webkit-border-radius: 90px;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    border: 11px solid #fff;
-    outline: none;
-  }
-
-  .jQWCP-slider-wrapper {
-    height: 500px !important;
-    margin-right: 50px;
+  .jQWCP-slider {
+    cursor: crosshair;
+    /* margin-top: -40px; */
   }
 
   .jQWCP-wWheelCursor {
     z-index: 3005 !important;
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -362,8 +365,8 @@ input {
     display: inline-block;
     /* width: 60px;
       height: 34px; */
-    width: 120px;
-    height: 68px;
+    width: 20vw;
+    height: 10vw;
   }
 
   /* Hide default HTML checkbox */
@@ -389,10 +392,10 @@ input {
   .slider:before {
     position: absolute;
     content: "";
-    height: 52px;
-    width: 52px;
-    left: 8px;
-    bottom: 8px;
+    height: 8vw;
+    width: 8vw;
+    left: 1vw;
+    bottom: 1vw;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -407,9 +410,9 @@ input {
   }
 
   input:checked+.slider:before {
-    -webkit-transform: translateX(52px);
-    -ms-transform: translateX(52px);
-    transform: translateX(52px);
+    -webkit-transform: translateX(10vw);
+    -ms-transform: translateX(10vw);
+    transform: translateX(10vw);
   }
 
   /* Rounded sliders */
@@ -436,8 +439,8 @@ input {
   .brightness-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 70px;
-    height: 70px;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     background: #262626;
     border: 3px solid white;
@@ -445,8 +448,8 @@ input {
   }
 
   .brightness-slider::-moz-range-thumb {
-    width: 70px;
-    height: 70px;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
