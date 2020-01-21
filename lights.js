@@ -34,31 +34,37 @@ lightGroup = new LightGroup(light01, light02, light03, light04);
 // var that = document.getElementById('that');
 // selected class aka button 01 -- find the parents index
 $('.01').click(function() {
-  var parentIndex = $(this).parent().parent().index();
+  var parentIndex = $('.01').index(this);
   light01.actionSel = parentIndex
-  // console.log(light01);
   var stringObj = JSON.stringify(lightGroup);
-  console.log(stringObj);
-  // that.innerHTML = stringObj;
+  console.log(`test ${parentIndex}`);
 });
 
 $('.02').click(function() {
-  var parentIndex = $(this).parent().parent().index();
+  var parentIndex = $('.02').index(this);
   light02.actionSel = parentIndex
-  console.log(light02);
+  console.log(`test ${parentIndex}`);
 });
 
 $('.03').click(function() {
-  var parentIndex = $(this).parent().parent().index();
+  var parentIndex = $('.03').index(this);
   light03.actionSel = parentIndex
   console.log(light03);
 });
 
 $('.04').click(function() {
-  var parentIndex = $(this).parent().parent().index();
+  var parentIndex = $('.04').index(this);
   light04.actionSel = parentIndex
   console.log(light04);
 });
+
+
+// old way
+// $('.04').click(function() {
+//   var parentIndex = $(this).parent().parent().index();
+//   light04.actionSel = parentIndex
+//   console.log(light04);
+// });
 
 $('.action-button').click(function() {
   if (light01.settingSel == "true" && $(this).prop("checked") == true ) {

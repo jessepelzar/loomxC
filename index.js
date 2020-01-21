@@ -5,7 +5,6 @@ var lastIndex03 = 10000;
 var lastIndex04 = 10000;
 
 function scrollThumb(direction) {
-  console.log("d");
   var child = document.getElementsByClassName('button-container')[0].offsetWidth;
   if (direction=='Go_L') {
       $('.scroll-menu-container').animate({
@@ -71,7 +70,7 @@ function navButton(pos) {
   last = pos;
 }
 
-$(document).ready( function() {
+// $(document).ready( function() {
 
 
    $(".01").click(function(){
@@ -299,7 +298,6 @@ $(document).ready( function() {
         }
       }
       else {
-        console.log("cunt");
         // var scrollPercent = (currX / ((scrollWidth - postWidth)))
         if (currX >= 0 && currX < scrollWidth) {
           console.log("1111111");
@@ -329,7 +327,7 @@ $(document).ready( function() {
     });
 
 
-});
+// });
 
 
 /*------------------------------------*/
