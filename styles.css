@@ -465,7 +465,7 @@ input {
 
   .light-controls {
     margin-left: 6vw;
-    margin-top: 5vh !important;
+    margin-top: 1vh !important;
     z-index: 2000;
   }
 
