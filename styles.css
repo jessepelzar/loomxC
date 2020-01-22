@@ -187,7 +187,7 @@ input {
 /* ========================================================= */
 /* ========================================================= */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 720px) {
   .label-container {
     margin-top: 4vh !important;
   }
@@ -259,46 +259,50 @@ input {
 
   .color-grid {
     width: 80vw;
+    position: relative;
+    margin-right: 10vw;
   }
 
   .jQWCP-wWheel {
+    position: absolute;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    position: relative;
     float: left;
-    width: 40vw !important;
-    height: 40vw !important;
+    width: 150px !important;
+    height: 150px !important;
     -webkit-border-radius: 90px;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: none;
-    margin-top: 2px;
-    margin-right: 10vw;
-    margin-left: -2px;
+    margin-top: 0px;
+    /* margin-right: -20px; */
+    margin-left: 0;
     transition: border .15s;
     cursor: crosshair;
   }
 
   .color-preview-circle {
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    margin-left: 0px;
-    margin-top: -241px;
+    margin-left: 3px;
+    margin-top: 3px;
     z-index: 1000;
-    width: 38vw;
-    height: 38vw;
+    width: 150px;
+    height: 150px;
     -webkit-border-radius: 90px;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 12px solid #fff;
+    border: 7px solid #fff;
     outline: none;
   }
 
   .jQWCP-slider-wrapper {
-    height: 40vw !important;
+    height: 150px !important;
     margin-right: 5vw !important;
+    left: 50vw;
   }
 
 
@@ -474,7 +478,7 @@ input {
 /* ========================================================= */
 /* ========================================================= */
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 721px) {
   .color-grid {
     /* height: 100px; */
     /* margin-left: 20px; */
@@ -505,7 +509,7 @@ input {
     border-radius: 50%;
     border: none;
     /* margin-top: -41px; */
-    margin-right: 50px;
+    margin-right: 5vw;
     transition: border .15s;
     cursor: crosshair;
   }
@@ -687,7 +691,7 @@ input {
   }
 
   .light-controls {
-    margin-left: 6vw;
+    margin-left: 11vw;
     margin-top: 10vh;
     z-index: 2000;
   }
