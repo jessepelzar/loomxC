@@ -259,6 +259,7 @@ input {
 
   .color-grid {
     width: 80vw;
+    height: 25vh;
     position: relative;
     margin-right: 10vw;
   }
